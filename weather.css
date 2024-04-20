@@ -1,0 +1,77 @@
+body {
+  background-color: rgb(233, 233, 233);
+}
+div {
+  max-width: 670px;
+  margin: 50px auto;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgb(114, 112, 114);
+  background-color: white;
+}
+
+h1,
+h2 {
+  color: #272044;
+  font-size: 40px;
+  font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+}
+.current-temperature-value {
+  color: #272044;
+  font-size: 40px;
+  font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+}
+
+span {
+  color: rgb(148, 147, 147);
+  font-family: monospace;
+}
+
+.temp {
+  color: #ec8ac3;
+}
+
+strong {
+  color: #ec5db1;
+}
+p {
+  color: #ec5db1;
+}
+
+.tempno {
+  text-align: center;
+  font-size: 68px;
+  max-height: 500px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  padding: 20px 40px;
+  font-size: 17px;
+}
+
+input[type="search"] {
+  background-color: rgb(233, 233, 233);
+  border: none;
+  color: #706f6f;
+  padding: 18px;
+  padding-right: 250px;
+  border-radius: 10px;
+  font-size: medium;
+}
+input[type="submit"] {
+  background-color: #8064e9;
+  padding: 18px 50px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: medium;
+  font-weight: 700;
+}
