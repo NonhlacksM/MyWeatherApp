@@ -65,6 +65,8 @@ input[type="search"] {
   padding-right: 250px;
   border-radius: 10px;
   font-size: medium;
+  position: relative;
+  max-width: 454px;
 }
 input[type="submit"] {
   background-color: #8064e9;
@@ -74,4 +76,5 @@ input[type="submit"] {
   color: white;
   font-size: medium;
   font-weight: 700;
+  position: relative;
 }
