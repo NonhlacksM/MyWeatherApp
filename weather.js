@@ -19,7 +19,7 @@ function searchAPI(city) {
 function searchCity(event) {
   event.preventDefault();
   let searchInputElement = document.querySelector("#search-input");
-  searchAPI(searchInputElement.value);
+  searchAPI(searchInputElement.value.trim());
 }
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchCity);
