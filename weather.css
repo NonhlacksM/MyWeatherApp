@@ -22,7 +22,10 @@ h2 {
   font-size: 69px;
   font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
 }
-
+.icon {
+  position: relative;
+  top: 25px;
+}
 span {
   color: rgb(148, 147, 147);
   font-family: monospace;
