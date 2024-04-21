@@ -41,34 +41,25 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", searchCity);
 searchAPI("jhb");
 //change date
-function formatDate(date) {
-  let minutes = date.getMinutes();
-  let hours = date.getHours();
-  let day = date.getDay();
+let days = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thurday",
+  "Friday",
+  "Saturday",
+];
 
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-
-  let formattedDay = days[day];
-  return `${formattedDay} ${hours}:${minutes}`;
+let now = new Date();
+let datenow = document.querySelector("#current-date");
+let weekday = days[now.getDay()];
+let hours = now.getHours();
+let min = now.getMinutes();
+if (min < 10) {
+  min = `0${min}`;
 }
-
-let currentDateELement = document.querySelector("#current-date");
-let currentDate = new Date();
-
-currentDateELement.innerHTML = formatDate(currentDate);
+if (hours < 10) {
+  hours = `0${hours}`;
+}
+datenow.innerHTML = `${weekday} ${hours}:${min}`;
