@@ -11,11 +11,23 @@ div {
   background-color: white;
 }
 
-h1,
 h2 {
   color: #272044;
   font-size: 40px;
   font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+}
+h1 {
+  position: relative;
+  color: #272044;
+  font-size: 40px;
+  font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+  top: -18px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.header {
+  position: relative;
+  bottom: -40px;
 }
 .current-temperature-value {
   color: #272044;
@@ -31,7 +43,7 @@ span {
   font-family: monospace;
 }
 
-.temp {
+.forecast-temperature-min {
   color: #ec8ac3;
 }
 
@@ -54,7 +66,22 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.forecast-temperature-icon {
+  position: relative;
+  top: -15px;
+  left: -18px;
+  margin-bottom: 1px;
+}
+.forecast-temperature-max {
+  position: relative;
+  top: -48px;
+  left: -18px;
+}
+.forecast-temperature-min {
+  position: relative;
+  top: -48px;
+  left: -10px;
+}
 li {
   padding: 20px 40px;
   font-size: 17px;
