@@ -6,7 +6,7 @@ export default function MoreInfo() {
     <footer className="p-4">
       This project was coded by{" "}
       <a href="https://github.com/NonhlacksM">Nonhlanhla Zwane</a> and is{" "}
-      <a href="https://github.com/NonhlacksM/weather">on GitHub</a> and{" "}
+      <a href="https://github.com/NonhlacksM/MyWeatherApp">on GitHub</a> and{" "}
       <a href="https://beginner-react-weather-app.netlify.app/">
         hosted on Netlify
       </a>
