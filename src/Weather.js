@@ -20,6 +20,7 @@ export default function Weather(props) {
   }
   useEffect(() => {
     searchCity();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function handleCityChange(event) {
