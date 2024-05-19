@@ -1,22 +1,22 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./Weather.css";
 import MoreInfo from "./MoreInfo";
 import Search from "./Search";
+import Forecast from "./Forecast";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState(null);
   const [city, setCity] = useState(props.defaultCity);
 
-  function showTemperature(response) {
+  function showData(response) {
     setWeatherData(response.data);
   }
 
   function searchCity() {
-    let apiKey = "203fa770242fcd2b9555d832a88ea567";
+    let apiKey = "33bf642o0ct3714a65adf2fc8fed4e85";
     let units = "metric";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-    axios.get(apiUrl).then(showTemperature);
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
+    axios.get(apiUrl).then(showData);
   }
   useEffect(() => {
     searchCity();
@@ -56,7 +56,9 @@ export default function Weather(props) {
           </div>
         </form>
         <hr className="mt-4" />
+
         {weatherData && <Search data={weatherData} />}
+        <Forecast city={city} />
         <hr className="mt-4" />
         <MoreInfo />
       </div>

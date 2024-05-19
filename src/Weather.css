@@ -14,12 +14,12 @@ h2 {
 }
 
 .temp {
-  color: black !important;
+  color: #272044 !important;
   font-size: 80px !important;
 }
 
 .tempdeg {
-  color: black !important;
+  color: #272044 !important;
   font-size: 26px;
   font-weight: 400;
   position: relative;
