@@ -32,30 +32,31 @@ export default function Weather(props) {
   }
 
   return (
-    <div class="container">
-      <div class="containerWeather shadow rounded-3 p-3">
-        <h1 class="ms-1 mb-4 fw-bold">🌥️ Daily weather</h1>
+    <div className="container">
+      <div className="containerWeather shadow rounded-3 p-3">
+        <h1 className="ms-1 mb-4 fw-bold">🌥️ Daily weather</h1>
         <form onSubmit={handleSubmit}>
-          <div class="row mb-4">
-            <div class="col-9">
+          <div className="row mb-4">
+            <div className="col-9">
               <input
                 type="search"
                 placeholder="Enter a city.."
-                class="form-control w-100 ms-1"
+                className="form-control w-100 ms-1"
                 onChange={handleCityChange}
               />
             </div>
-            <div class="col">
+            <div className="col">
               <input
                 type="submit"
                 value="Search"
-                class="btn btn-primary w-100 fw-bold "
+                className="btn btn-primary w-100 fw-bold "
               />
             </div>
-            <hr class="mt-4"></hr>
           </div>
         </form>
+        <hr className="mt-4" />
         {weatherData && <Search data={weatherData} />}
+        <hr className="mt-4" />
         <MoreInfo />
       </div>
     </div>

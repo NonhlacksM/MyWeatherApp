@@ -22,7 +22,7 @@ export default function CurrentDate() {
     hours = `0${hours}`;
   }
   return (
-    <p class="mb-0">
+    <p className="mb-0">
       {weekday} {hours}:{min}
     </p>
   );
