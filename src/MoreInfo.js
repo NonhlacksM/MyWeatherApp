@@ -7,9 +7,7 @@ export default function MoreInfo() {
       This project was coded by{" "}
       <a href="https://github.com/NonhlacksM">Nonhlanhla Zwane</a> and is{" "}
       <a href="https://github.com/NonhlacksM/MyWeatherApp">on GitHub</a> and{" "}
-      <a href="https://beginner-react-weather-app.netlify.app/">
-        hosted on Netlify
-      </a>
+      <a href="https://dailyweathersearch.netlify.app/">hosted on Netlify</a>
     </footer>
   );
 }
