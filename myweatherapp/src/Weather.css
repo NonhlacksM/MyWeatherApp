@@ -1,0 +1,42 @@
+body {
+  background-color: rgb(238, 237, 237) !important;
+}
+.containerWeather {
+  margin: 60px auto;
+  max-width: 770px;
+  background-color: white;
+}
+
+h1,
+h2 {
+  color: #272044;
+  font-size: 40px;
+}
+
+.temp {
+  color: black !important;
+  font-size: 80px !important;
+}
+
+.tempdeg {
+  color: black !important;
+  font-size: 26px;
+  font-weight: 400;
+  position: relative;
+  top: -40px;
+}
+.btn {
+  background: #ffcab0 !important;
+  border: none !important;
+}
+
+p,
+footer {
+  color: rgb(148, 147, 147);
+  font-family: monospace;
+}
+
+span,
+a {
+  color: #ec5db1 !important;
+}
